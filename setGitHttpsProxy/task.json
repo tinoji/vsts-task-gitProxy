@@ -4,7 +4,7 @@
   "friendlyName": "Set Git proxy",
   "description": "This task is created to use Github Enterprise repository.",
   "author": "H. Kikuchi",
-  "helpMarkDown": "",
+  "helpMarkDown": "See [repository README](https://github.com/tinoji/vsts-task-gitProxy)",
   "category": "Utility",
   "visibility": [
     "Build",
@@ -14,7 +14,7 @@
   "version": {
     "Major": "0",
     "Minor": "1",
-    "Patch": "38"
+    "Patch": "39"
   },
   "minimumAgentVersion": "1.95.0",
   "instanceNameFormat": "setGitHttpsProxy $(message)",
@@ -23,9 +23,9 @@
             "name": "ProxyConfig",
             "type": "string",
             "label": "proxy",
-            "defaultValue": "",
+            "defaultValue": "http://",
             "required": true,
-            "helpMarkDown": ""
+            "helpMarkDown": "Syntax is `[protocol://][user[:password]@]proxyhost[:port]`. If the credential is not needed, `[protocol://]proxyhost[:port]`. See [git docs](https://git-scm.com/docs/git-config#git-config-httpproxy)"
         }
   ],
   "prejobexecution": {
