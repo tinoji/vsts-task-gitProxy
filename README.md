@@ -18,7 +18,7 @@ VSTS staffs recommend using an on-premises agent! You should consider it at firs
 
 1. Install [vsts cli commannd](https://github.com/Microsoft/tfs-cli) and log in to your VSTS account.
 
-1. Upload a task to your account. Task path is `vsts-task-gitProxy/task`
+1. Upload a task to your account.
     ```
     cd vsts-task-gitProxy/task
     tfx build tasks upload
