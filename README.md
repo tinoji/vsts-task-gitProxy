@@ -35,7 +35,11 @@ VSTS staffs recommend using an on-premises agent! You should consider it at firs
 Add the task in your build definition.
 ![add_task](https://github.com/tinoji/vsts-task-gitProxy/blob/images/images/add_task.png)
 
+Put the task in the top order.
+![order](https://github.com/tinoji/vsts-task-gitProxy/blob/images/images/order.png)
 
+Enter your proxy configuration. 
+![configuration](https://github.com/tinoji/vsts-task-gitProxy/blob/images/images/configuration.png)
 
 
 ## References
