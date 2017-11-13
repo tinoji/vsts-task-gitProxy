@@ -1,8 +1,8 @@
 {
   "id": "6b00d2b0-c2d8-11e7-bf46-d5eca66ecdf4",
-  "name": "setGitProxy",
+  "name": "gitProxy",
   "friendlyName": "Set Git proxy",
-  "description": "This task is created to use Github Enterprise repository.",
+  "description": "A build task to set git config for proxy. This runs before Get Sources task.",
   "author": "H. Kikuchi",
   "helpMarkDown": "See [repository README](https://github.com/tinoji/vsts-task-gitProxy)",
   "category": "Utility",
@@ -25,7 +25,7 @@
             "label": "proxy",
             "defaultValue": "http://",
             "required": true,
-            "helpMarkDown": "Syntax is `[protocol://][user[:password]@]proxyhost[:port]`. If the credential is not needed, `[protocol://]proxyhost[:port]`. See [git docs](https://git-scm.com/docs/git-config#git-config-httpproxy)"
+            "helpMarkDown": "Syntax is `protocol://user:password@proxyhost:port`. If the credential is not needed, `protocol://proxyhost:port`. See [git docs](https://git-scm.com/docs/git-config#git-config-httpproxy)"
         }
   ],
   "prejobexecution": {
