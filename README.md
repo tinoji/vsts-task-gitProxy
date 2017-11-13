@@ -5,15 +5,26 @@ VSTS staffs recommend using an on-premises agent! You should consider it at firs
 
 
 ## Installation
+1. git clone this repository.
+    ```
+    git clone https://github.com/tinoji/vsts-task-gitProxy
+    ```
+
+1. Download `VstsTaskSdk`, then copy it in `task/ps_modules`.
+    ```
+    git clone https://github.com/Microsoft/vsts-task-lib
+    cp -R vsts-task-lib/powershell/VstsTaskSdk vsts-task-gitProxy/task/ps_modules
+    ```
+
 1. Install [vsts cli commannd](https://github.com/Microsoft/tfs-cli) and log in to your VSTS account.
-1. git clone this repo.
+
+1. Upload a task to your account. Task path is `vsts-task-gitProxy/task`
     ```
-    $ git clone https://github.com/tinoji/vsts-task-gitProxy
+    cd vsts-task-gitProxy/task
+    tfx build tasks upload
     ```
-1. Upload a task to your account. Task path is `vsts-task-gitProxy/setGitHttpsProxy`
+    Enter path in the task path prompt.
     ```
-    $ cd vsts-task-gitProxy/setGitHttpsProxy
-    $ tfx build tasks upload
     TFS Cross Platform Command Line Interface v0.4.11
     Copyright Microsoft Corporation
     > Task path: .
@@ -27,10 +38,7 @@ screen shot here
 ## References
 [Running powershell before Get Sources in VSTS / TFS Build](http://www.codewrecks.com/blog/index.php/2017/06/10/running-powershell-before-get-sources-in-vsts-tfs-build/)
 
+https://github.com/Microsoft/vsts-agent/issues/1281
 
 ## License
 MIT
-
-
-## Memo
-make it extension???
