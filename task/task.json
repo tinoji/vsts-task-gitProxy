@@ -14,10 +14,10 @@
   "version": {
     "Major": "1",
     "Minor": "0",
-    "Patch": "0"
+    "Patch": "2"
   },
   "minimumAgentVersion": "1.95.0",
-  "instanceNameFormat": "setGitHttpsProxy $(message)",
+  "instanceNameFormat": "Set git proxy $(message)",
   "inputs": [
         {
             "name": "ProxyConfig",

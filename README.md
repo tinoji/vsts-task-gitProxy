@@ -32,7 +32,10 @@ VSTS staffs recommend using an on-premises agent! You should consider it at firs
 
 
 ## Usage
-screen shot here
+Add the task in your build definition.
+![add_task](https://github.com/tinoji/vsts-task-gitProxy/blob/images/images/add_task.png)
+
+
 
 
 ## References
